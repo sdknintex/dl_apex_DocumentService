@@ -3,7 +3,7 @@
 global class CustomDocumentMerge {
     
     public static Id MergeFiles(Id parentRecordId) {
-        string mergedFilename; // set the name of the combined file
+        string mergedFilename; // set the name of the combined file, including the file extension, e.g. "my doc.pdf"
         boolean trackActivity = false; // set whether or not to create a task for tracking status (completion/error)
         string mergeType; // specify the type of merge: pdf, zip, byType (Word+Word, Excel+Excel, PPT+PPT, PDF+PDF) - if not specified, the default is pdf
         Id parentId; // optional - the Id of the Salesforce record to attach the merged file to
